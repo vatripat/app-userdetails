@@ -3,7 +3,7 @@
 
 '''
 @Author-Name : Vaibhav Tripathi <vatripat@gmail.com>
-@Description: This Repository contains the below tasks as part of the challenge :
+Description: This Repository contains the below tasks as part of the challenge :
 
 	1- Test Coverage for User management portal @ https://ankitairen.github.io/ 
 	2- List of Bugs identified as part of Testing

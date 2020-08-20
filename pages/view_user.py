@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.common.exceptions import InvalidArgumentException
 from .common import Page
 
 import logging
@@ -113,9 +114,13 @@ class ViewUser(Page):
             assert len(elems) == 1
 
             logger.info("Non Admin user : {} , Delete button is present".format(user_id))
-            self.driver.find_elements(elems[0]).click()
-            logger.info("Deleting Non Admin user : {}".format(user_id))
-            self._verify_user_not_present(user_id)
+            try:
+                logger.info("Deleting Non Admin user : {}".format(user_id))
+                self.driver.find_elements(elems[0]).click()
+                self._verify_user_not_present(user_id)
+            except InvalidArgumentException as exception:
+                logger.error("User is not able to click Delete button : {}".format(exception))
+                raise exception
 
 
 

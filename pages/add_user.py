@@ -107,7 +107,7 @@ class AddUser(Page):
     def verify_user_box_should_be_blank(self):
 
         logger.info("verifying that input box should be blank on AddUser page")
-        assert self._get_field_text(*self.USERID) is None
+        assert self._get_field_text(self.USERID) is None, "Old data entry Present, not refreshed while switching back"
 
     def insert_invalid_credentials(self, userid, password):
 

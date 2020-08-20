@@ -12,20 +12,20 @@ LOGIN PAGE FUNCTIONALITY & UI VALIDATION :
 
     USABILITY TEST : 
     
-        1- Portal is accessible over web Url https://ankitairen.github.io/ - Done
+        1- Portal is accessible over web Url https://ankitairen.github.io/
         
-        2- Verify that the login screen is having option to enter username and password with submit button  -Done
+        2- Verify that the login screen is having option to enter username and password with submit button 
             and option of forgot/reset password.
         
-        3- Element type of testbox "password" on UI should not be text, it should be of type "password". (*****) - Done
+        3- Element type of test box "password" on UI should not be text, it should be of type "password". (*****) 
         
-        4- Verify there should be checkbox with label "remember password" on the login page. - Done
+        4- Verify there should be checkbox with label "remember password" on the login page.
         
         5- user is displayed the message like "incorrect username or password" instead of exact message pointing
-            at the field that is incorrect. As message like "incorrect username" will promote hacker in bruteforcing.  
+            at the field that is incorrect. As message like "incorrect username" will promote hacker in brute forcing.  
             
         6- Validation of System generated HINT "Password must conatin at least one lower case alphabet, 
-            one upper case alphabet, one number and one special character!"  - Done
+            one upper case alphabet, one number and one special character!"
             
         7- Cross Browser compatibility  - Not Done
             
@@ -33,29 +33,29 @@ LOGIN PAGE FUNCTIONALITY & UI VALIDATION :
 
     Login : Valid userid: X password: Y
 
-        1- login successful using proprietary data (Both input is correct) - Done
+        1- login successful using proprietary data (Both input is correct)
         
         2- Verify the timeout of the login session  - BUG 
         
-        3- Verify user is  allowed to log in simultaneously with different credentials in different browser. Done
+        3- Verify user is allowed to log in simultaneously with different credentials in different browser.
 
     NEGATIVE:
 
     login: [user not registered]
 
-        2- login fail with unregistered user  - Done
+        2- login fail with unregistered user
 
     login: [invalid/Wrong password]
 
-        3- User can't log in with correct userid but bad password  -Done
+        3- User can't log in with correct userid but bad password
     
     login: [Empty username & empty Password]  
     
-        4- User can't log in with blank userid &  password  -Done
+        4- User can't log in with blank user id &  password
     
     login: [Case sensitive validation for Credentials]
         
-        5- Login with case changed username /password   -Not Done
+        5- Login with case changed username /password 
             
     login: [credential length Boundary Validation]  - No Error, But User is not being created
     
@@ -68,7 +68,7 @@ LOGIN PAGE FUNCTIONALITY & UI VALIDATION :
 
     login: [System unavailability (servers are down, no internet connection)]
 
-        8- User can't log in to system with proprietary login and password.
+        8- User can't log in to system with proprietary login and password. 
         
         
 USER MANAGEMENT PAGE FUNCTIONAL & UI VALIDATION :
@@ -117,7 +117,7 @@ USER MANAGEMENT PAGE FUNCTIONAL & UI VALIDATION :
     8- After Updating the Details of a specific user ,Login with Admin and 
        verify admin can see the Updated details on "View User" page.       - Bug
     
-    8- User Can sign out from the Page.  - Done
+    9- User Can sign out from the Page.  - Done
         
 
 """

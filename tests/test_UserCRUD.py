@@ -1,3 +1,4 @@
+import pytest
 from pages.login import Login
 
 import logging
@@ -35,8 +36,8 @@ class TestUserCrud(object):
         add_user_page.insert_invalid_credentials(self.testUser, self.testPassword)
         add_user_page.verify_password_hint_msg(self.password_hint)
 
-    def test_user_created_successfully(self, driver):
-        logger.info("====== Running TEST : test_user_created_successfully =====")
+    def test_create_user(self, driver):
+        logger.info("====== Running TEST : test_create_user ========")
 
         login_page = Login(driver)
 
@@ -46,6 +47,20 @@ class TestUserCrud(object):
                                                          self.user_data_1['First Name'], self.user_data_1['Last Name'])
 
         view_user_page.verify_user_present(self.user_data_1)
+
+    @pytest.mark.xfail
+    def test_delete_user(self, driver):
+        logger.info("====== Running TEST : test_delete_user ========")
+
+        login_page = Login(driver)
+
+        add_user_page = login_page.login_with_valid_credentials()
+
+        view_user_page = add_user_page.create_valid_user(self.user_data_1['UserID'], self.user_data_1['Password'],
+                                                         self.user_data_1['First Name'], self.user_data_1['Last Name'])
+
+        view_user_page.verify_user_present(self.user_data_1)
+        view_user_page.delete_user(self.user_data_1['UserID'])
 
     def test_multiple_user_created_successfully(self, driver):
         logger.info("====== Running TEST : test_multiple_user_created_successfully =====")
@@ -82,6 +97,30 @@ class TestUserCrud(object):
 
         add_user_page.create_invalid_user(self.user_data_1['UserID'], self.user_data_1['Password'])\
             .verify_duplicate_user_error("This userid already exists. Please enter another userid.")
+
+    @pytest.mark.xfail
+    def test_switch_from_viewuser_to_adduser(self, driver):
+        logger.info("====== Running TEST : test_switch_from_viewuser_to_adduser =====")
+
+        login_page = Login(driver)
+
+        add_user_page = login_page.login_with_valid_credentials()
+
+        view_user_page = add_user_page.create_valid_user(self.user_data_1['UserID'], self.user_data_1['Password'],
+                                                         self.user_data_1['First Name'], self.user_data_1['Last Name'])
+
+        view_user_page.verify_user_present(self.user_data_1)
+
+        """
+            #This step will fail due to identified issue
+        """
+        view_user_page.goto_adduser().verify_user_box_should_be_blank()
+
+
+
+
+
+
 
 
 

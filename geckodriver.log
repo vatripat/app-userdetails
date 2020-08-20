@@ -3128,3 +3128,115 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 1597930278032	Marionette	INFO	Listening on port 65290
 1597930278096	Marionette	WARN	TLS certificate errors will be ignored for this session
 1597930281877	Marionette	INFO	Stopped listening on port 65290
+1597956436773	geckodriver	INFO	Listening on 127.0.0.1:50997
+1597956437787	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofileRYr2lg"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956441092	Marionette	INFO	Listening on port 51008
+1597956441139	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956444007	Marionette	INFO	Stopped listening on port 51008
+1597956445960	geckodriver	INFO	Listening on 127.0.0.1:51075
+1597956446967	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofile6sfnC0"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956449710	Marionette	INFO	Listening on port 51086
+1597956449772	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956452607	Marionette	INFO	Stopped listening on port 51086
+1597956454507	geckodriver	INFO	Listening on 127.0.0.1:51139
+1597956455514	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofile3t9OKO"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956458030	Marionette	INFO	Listening on port 51150
+1597956458103	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956460510	Marionette	INFO	Stopped listening on port 51150
+JavaScript error: chrome://marionette/content/proxy.js, line 287: NS_ERROR_NOT_INITIALIZED: 
+1597956463467	geckodriver	INFO	Listening on 127.0.0.1:51205
+1597956464475	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofile9pQ9pP"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956466855	Marionette	INFO	Listening on port 51216
+1597956466882	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956468995	Marionette	INFO	Stopped listening on port 51216
+1597956470880	geckodriver	INFO	Listening on 127.0.0.1:51263
+1597956471891	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofilewOc5EV"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956474248	Marionette	INFO	Listening on port 51274
+1597956474270	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956476760	Marionette	INFO	Stopped listening on port 51274
+1597956478694	geckodriver	INFO	Listening on 127.0.0.1:51326
+1597956479706	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofileLA22D1"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956482090	Marionette	INFO	Listening on port 51337
+1597956482110	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956485173	Marionette	INFO	Stopped listening on port 51337
+1597956488116	geckodriver	INFO	Listening on 127.0.0.1:51385
+1597956489126	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofileJWliWP"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956491651	Marionette	INFO	Listening on port 51396
+1597956491712	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956494352	Marionette	INFO	Stopped listening on port 51396
+1597956496259	geckodriver	INFO	Listening on 127.0.0.1:51449
+1597956497269	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofileLUQ1Ad"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956499712	Marionette	INFO	Listening on port 51460
+1597956499773	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956502785	Marionette	INFO	Stopped listening on port 51460
+1597956505721	geckodriver	INFO	Listening on 127.0.0.1:51512
+1597956506731	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofiletp5leC"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956509263	Marionette	INFO	Listening on port 51523
+1597956509330	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956512359	Marionette	INFO	Stopped listening on port 51523
+1597956515285	geckodriver	INFO	Listening on 127.0.0.1:51574
+1597956516296	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofileL1h5DF"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956518683	Marionette	INFO	Listening on port 51585
+1597956518793	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956521315	Marionette	INFO	Stopped listening on port 51585
+JavaScript error: chrome://marionette/content/proxy.js, line 287: NS_ERROR_NOT_INITIALIZED: 
+1597956524274	geckodriver	INFO	Listening on 127.0.0.1:51638
+1597956525281	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/19/slznkn35107fxzhblgm74_7r0000gp/T/rust_mozprofilemvly6s"
+console.error: JsonSchemaValidator.jsm: 
+  Ignoring parameter "URL_TO_ALTERNATE_PROVIDER" - scheme (http or https) must be specified.
+console.error: Enterprise Policies: 
+  Invalid parameters specified for DNSOverHTTPS.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597956527693	Marionette	INFO	Listening on port 51649
+1597956527759	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597956532986	Marionette	INFO	Stopped listening on port 51649

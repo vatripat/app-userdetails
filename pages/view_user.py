@@ -100,21 +100,23 @@ class ViewUser(Page):
 
         self.DELETE_USER[1] = self.DELETE_USER[1].format(userid)
         assert len(self.driver.find_elements(*self.DELETE_USER)) == 0
+        logger.info("user {} is deleted successfully".format(userid))
 
-    def _delete_user(self, userid):
+    def delete_user(self, user_id):
 
-        self.DELETE_USER[1] = self.DELETE_USER[1].format(userid)
+        self.DELETE_USER[1] = self.DELETE_USER[1].format(user_id)
         elems = self.driver.find_elements(*self.DELETE_USER)
-        if userid == "admin":
+        if user_id == "admin":
             logger.info("Admin user can not be deleted , Delete button not present")
             assert len(elems) == 0
         else:
             assert len(elems) == 1
 
-            logger.info("Non Admin user : {} , Delete button is present".format(userid))
+            logger.info("Non Admin user : {} , Delete button is present".format(user_id))
             self.driver.find_elements(elems[0]).click()
-            logger.info("Deleting Non Admin user : {}".format(userid))
-            self._verify_user_not_present(userid)
+            logger.info("Deleting Non Admin user : {}".format(user_id))
+            self._verify_user_not_present(user_id)
+
 
 
 

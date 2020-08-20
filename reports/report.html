@@ -243,7 +243,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 20-Aug-2020 at 19:01:24 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 21-Aug-2020 at 02:18:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,8 +262,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.4</td></tr></table>
     <h2>Summary</h2>
-    <p>9 tests ran in 78.94 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">1 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>11 tests ran in 97.78 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">3 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -277,12 +277,102 @@ function filter_table(elem) {
       <tbody class="xfailed results-table-row">
         <tr>
           <td class="col-result">XFailed</td>
-          <td class="col-name">tests/test_UserProfile.py::TestUserProfile::test_update_user_information</td>
-          <td class="col-duration">2.54</td>
+          <td class="col-name">tests/test_UserCRUD.py::TestUserCrud::test_delete_user</td>
+          <td class="col-duration">1.09</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_UserProfile.TestUserProfile object at 0x118d30410&gt;<br/>driver = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session=&quot;7810d8e3-10ba-2647-b9b1-a3fd04ec53ec&quot;)&gt;<br/><br/>    @pytest.mark.xfail<br/>    def test_update_user_information(self, driver):<br/>    <br/>        logger.info(&quot;====== Running TEST : test_update_user_information =====&quot;)<br/>    <br/>        login_page = Login(driver)<br/>    <br/>        add_user_page = login_page.login_with_valid_credentials()<br/>    <br/>        view_user_page = add_user_page.create_valid_user(self.user_data_1[&#x27;UserID&#x27;], self.user_data_1[&#x27;Password&#x27;],<br/>                                                         self.user_data_1[&#x27;First Name&#x27;], self.user_data_1[&#x27;Last Name&#x27;])<br/>    <br/>        login_page = view_user_page.sign_out()<br/>    <br/>        user_profile = login_page.login_with_valid_credentials(self.user_data_1[&#x27;UserID&#x27;], self.user_data_1[&#x27;Password&#x27;])<br/>    <br/>        user_profile.verify_userid_enabled()<br/>    <br/>        user_profile.verify_user_profile_is_correct(self.user_data_1[&#x27;UserID&#x27;], self.user_data_1[&#x27;Password&#x27;],<br/>                                                    self.user_data_1[&#x27;First Name&#x27;], self.user_data_1[&#x27;Last Name&#x27;])<br/>    <br/>        user_profile.update_user_details(password=self.user_data_2[&#x27;Password&#x27;], f_name=self.user_data_2[&#x27;First Name&#x27;])<br/>    <br/>        login_page = user_profile.sign_out()<br/>    <br/>        add_user_page = login_page.login_with_valid_credentials()<br/>    <br/>&gt;       add_user_page.goto_viewuser().verify_user_present(self.user_data_2)<br/><br/>tests/test_UserProfile.py:51: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;pages.view_user.ViewUser object at 0x118d4a9d0&gt;<br/>user_data = {&#x27;First Name&#x27;: &#x27;first004&#x27;, &#x27;Last Name&#x27;: &#x27;last004&#x27;, &#x27;Password&#x27;: &#x27;Update@123&#x27;, &#x27;UserID&#x27;: &#x27;testuser003&#x27;}<br/><br/>    def verify_user_present(self, user_data):<br/>    <br/>        &quot;&quot;&quot;<br/>        :param user_data: data is dictionary which contains the user information<br/>        :return: Boolean : True/False as result Validation<br/>        &quot;&quot;&quot;<br/>        table_data = self.read_user_table_data()<br/>        counter = 0<br/>        for data in table_data:<br/>            if self._compare_dict(data, user_data, [&#x27;Action&#x27;]):<br/>                logging.info(&quot;user_data {} present in table_data {}&quot;.format(user_data, table_data))<br/>                counter += 1<br/>    <br/>        if counter != 1:<br/>            logging.error(&quot;expected user_data {} not present/ present more than once in table {}&quot;.\<br/>                          format(user_data, table_data))<br/>&gt;           assert False<br/><span class="error">E           AssertionError</span><br/><br/>pages/view_user.py:95: AssertionError<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}
+            <div class="log">self = &lt;test_UserCRUD.TestUserCrud object at 0x1176939d0&gt;<br/>driver = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session=&quot;f2cb1f7f-0fb6-8d49-b703-1146ec37ea73&quot;)&gt;<br/><br/>    @pytest.mark.xfail<br/>    def test_delete_user(self, driver):<br/>        logger.info(&quot;====== Running TEST : test_delete_user ========&quot;)<br/>    <br/>        login_page = Login(driver)<br/>    <br/>        add_user_page = login_page.login_with_valid_credentials()<br/>    <br/>        view_user_page = add_user_page.create_valid_user(self.user_data_1[&#x27;UserID&#x27;], self.user_data_1[&#x27;Password&#x27;],<br/>                                                         self.user_data_1[&#x27;First Name&#x27;], self.user_data_1[&#x27;Last Name&#x27;])<br/>    <br/>        view_user_page.verify_user_present(self.user_data_1)<br/>&gt;       view_user_page.delete_user(self.user_data_1[&#x27;UserID&#x27;])<br/><br/>tests/test_UserCRUD.py:63: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>pages/view_user.py:116: in delete_user<br/>    self.driver.find_elements(elems[0]).click()<br/>/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py:1007: in find_elements<br/>    &#x27;value&#x27;: value})[&#x27;value&#x27;] or []<br/>/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py:321: in execute<br/>    self.error_handler.check_response(response)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x1176e41d0&gt;<br/>response = {&#x27;status&#x27;: 400, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;invalid argument&quot;,&quot;message&quot;:&quot;unknown variant `ELEMENT`, expected one of `css selector`, `link text`, `partial link text`, `tag name`, `xpath` at line 1 column 20&quot;,&quot;stacktrace&quot;:&quot;&quot;}}&#x27;}<br/><br/>    def check_response(self, response):<br/>        &quot;&quot;&quot;<br/>        Checks that a JSON response from the WebDriver does not have an error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&#x27;status&#x27;, None)<br/>        if status is None or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&#x27;value&#x27;, None)<br/>            if value_json and isinstance(value_json, basestring):<br/>                import json<br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value[&#x27;value&#x27;]<br/>                    status = value.get(&#x27;error&#x27;, None)<br/>                    if status is None:<br/>                        status = value[&quot;status&quot;]<br/>                        message = value[&quot;value&quot;]<br/>                        if not isinstance(message, basestring):<br/>                            value = message<br/>                            message = message.get(&#x27;message&#x27;)<br/>                    else:<br/>                        message = value.get(&#x27;message&#x27;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class = ErrorInResponseException<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif status in ErrorCode.INVALID_SELECTOR \<br/>                or status in ErrorCode.INVALID_XPATH_SELECTOR \<br/>                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if value == &#x27;&#x27; or value is None:<br/>            value = response[&#x27;value&#x27;]<br/>        if isinstance(value, basestring):<br/>            if exception_class == ErrorInResponseException:<br/>                raise exception_class(response, value)<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &#x27;message&#x27; in value:<br/>            message = value[&#x27;message&#x27;]<br/>    <br/>        screen = None<br/>        if &#x27;screen&#x27; in value:<br/>            screen = value[&#x27;screen&#x27;]<br/>    <br/>        stacktrace = None<br/>        if &#x27;stackTrace&#x27; in value and value[&#x27;stackTrace&#x27;]:<br/>            stacktrace = []<br/>            try:<br/>                for frame in value[&#x27;stackTrace&#x27;]:<br/>                    line = self._value_or_default(frame, &#x27;lineNumber&#x27;, &#x27;&#x27;)<br/>                    file = self._value_or_default(frame, &#x27;fileName&#x27;, &#x27;&lt;anonymous&gt;&#x27;)<br/>                    if line:<br/>                        file = &quot;%s:%s&quot; % (file, line)<br/>                    meth = self._value_or_default(frame, &#x27;methodName&#x27;, &#x27;&lt;anonymous&gt;&#x27;)<br/>                    if &#x27;className&#x27; in frame:<br/>                        meth = &quot;%s.%s&quot; % (frame[&#x27;className&#x27;], meth)<br/>                    msg = &quot;    at %s (%s)&quot;<br/>                    msg = msg % (meth, file)<br/>                    stacktrace.append(msg)<br/>            except TypeError:<br/>                pass<br/>        if exception_class == ErrorInResponseException:<br/>            raise exception_class(response, message)<br/>        elif exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &#x27;data&#x27; in value:<br/>                alert_text = value[&#x27;data&#x27;].get(&#x27;text&#x27;)<br/>            elif &#x27;alert&#x27; in value:<br/>                alert_text = value[&#x27;alert&#x27;].get(&#x27;text&#x27;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.InvalidArgumentException: Message: unknown variant `ELEMENT`, expected one of `css selector`, `link text`, `partial link text`, `tag name`, `xpath` at line 1 column 20</span><br/><br/>/opt/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py:242: InvalidArgumentException<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}
+<br/> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m root:conftest.py:32 getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}<br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:====== Running TEST : test_delete_user ========
+INFO:root:verify the Page Header for correctness of Page landed
+INFO:root:enter the user id : admin
+INFO:root:enter the password  : Admin123#
+INFO:root:hitting the login button
+INFO:root:landing to Add User page in case of ADMIN user
+INFO:root:landed on add user page
+INFO:root:entering user id testuser001
+INFO:root:entering password  Test@123
+INFO:root:entering first name of User :  first001
+INFO:root:entering Last name of User :  last001
+INFO:root:Creating new user by clicking &#x27;add user&#x27; button
+INFO:root:clicking add user button
+INFO:root:Getting the data from User table and storing it
+INFO:root:user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
+INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;} present in table_data [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
+INFO:root:Non Admin user : testuser001 , Delete button is present
+<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:53 ====== Running TEST : test_delete_user ========
+[32mINFO    [0m root:login.py:65 verify the Page Header for correctness of Page landed
+[32mINFO    [0m root:login.py:39 enter the user id : admin
+[32mINFO    [0m root:login.py:46 enter the password  : Admin123#
+[32mINFO    [0m root:login.py:59 hitting the login button
+[32mINFO    [0m root:login.py:99 landing to Add User page in case of ADMIN user
+[32mINFO    [0m root:add_user.py:38 landed on add user page
+[32mINFO    [0m root:add_user.py:45 entering user id testuser001
+[32mINFO    [0m root:add_user.py:52 entering password  Test@123
+[32mINFO    [0m root:add_user.py:80 entering first name of User :  first001
+[32mINFO    [0m root:add_user.py:86 entering Last name of User :  last001
+[32mINFO    [0m root:add_user.py:133 Creating new user by clicking &#x27;add user&#x27; button
+[32mINFO    [0m root:add_user.py:92 clicking add user button
+[32mINFO    [0m root:view_user.py:42 Getting the data from User table and storing it
+[32mINFO    [0m root:view_user.py:57 user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
+[32mINFO    [0m root:view_user.py:89 user_data {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;} present in table_data [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
+[32mINFO    [0m root:view_user.py:115 Non Admin user : testuser001 , Delete button is present<br/></div></td></tr></tbody>
+      <tbody class="xfailed results-table-row">
+        <tr>
+          <td class="col-result">XFailed</td>
+          <td class="col-name">tests/test_UserCRUD.py::TestUserCrud::test_switch_from_viewuser_to_adduser</td>
+          <td class="col-duration">1.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_UserCRUD.TestUserCrud object at 0x117664710&gt;<br/>driver = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session=&quot;0421ac4d-1d71-1547-8f2d-fc7c9086106d&quot;)&gt;<br/><br/>    @pytest.mark.xfail<br/>    def test_switch_from_viewuser_to_adduser(self, driver):<br/>        logger.info(&quot;====== Running TEST : test_switch_from_viewuser_to_adduser =====&quot;)<br/>    <br/>        login_page = Login(driver)<br/>    <br/>        add_user_page = login_page.login_with_valid_credentials()<br/>    <br/>        view_user_page = add_user_page.create_valid_user(self.user_data_1[&#x27;UserID&#x27;], self.user_data_1[&#x27;Password&#x27;],<br/>                                                         self.user_data_1[&#x27;First Name&#x27;], self.user_data_1[&#x27;Last Name&#x27;])<br/>    <br/>        view_user_page.verify_user_present(self.user_data_1)<br/>    <br/>        &quot;&quot;&quot;<br/>            #This step will fail due to identified issue<br/>        &quot;&quot;&quot;<br/>&gt;       view_user_page.goto_adduser().verify_user_box_should_be_blank()<br/><br/>tests/test_UserCRUD.py:117: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;pages.add_user.AddUser object at 0x1176f32d0&gt;<br/><br/>    def verify_user_box_should_be_blank(self):<br/>    <br/>        logger.info(&quot;verifying that input box should be blank on AddUser page&quot;)<br/>&gt;       assert self._get_field_text(*self.USERID) is None<br/><span class="error">E       TypeError: _get_field_text() takes 2 positional arguments but 3 were given</span><br/><br/>pages/add_user.py:110: TypeError<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}
+<br/> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m root:conftest.py:32 getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}<br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:====== Running TEST : test_switch_from_viewuser_to_adduser =====
+INFO:root:verify the Page Header for correctness of Page landed
+INFO:root:enter the user id : admin
+INFO:root:enter the password  : Admin123#
+INFO:root:hitting the login button
+INFO:root:landing to Add User page in case of ADMIN user
+INFO:root:landed on add user page
+INFO:root:entering user id testuser001
+INFO:root:entering password  Test@123
+INFO:root:entering first name of User :  first001
+INFO:root:entering Last name of User :  last001
+INFO:root:Creating new user by clicking &#x27;add user&#x27; button
+INFO:root:clicking add user button
+INFO:root:Getting the data from User table and storing it
+INFO:root:user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
+INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;} present in table_data [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
+INFO:root:Switching moved to AddUser screen
+INFO:root:landed on add user page
+INFO:root:verifying that input box should be blank on AddUser page
+<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:103 ====== Running TEST : test_switch_from_viewuser_to_adduser =====
+[32mINFO    [0m root:login.py:65 verify the Page Header for correctness of Page landed
+[32mINFO    [0m root:login.py:39 enter the user id : admin
+[32mINFO    [0m root:login.py:46 enter the password  : Admin123#
+[32mINFO    [0m root:login.py:59 hitting the login button
+[32mINFO    [0m root:login.py:99 landing to Add User page in case of ADMIN user
+[32mINFO    [0m root:add_user.py:38 landed on add user page
+[32mINFO    [0m root:add_user.py:45 entering user id testuser001
+[32mINFO    [0m root:add_user.py:52 entering password  Test@123
+[32mINFO    [0m root:add_user.py:80 entering first name of User :  first001
+[32mINFO    [0m root:add_user.py:86 entering Last name of User :  last001
+[32mINFO    [0m root:add_user.py:133 Creating new user by clicking &#x27;add user&#x27; button
+[32mINFO    [0m root:add_user.py:92 clicking add user button
+[32mINFO    [0m root:view_user.py:42 Getting the data from User table and storing it
+[32mINFO    [0m root:view_user.py:57 user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
+[32mINFO    [0m root:view_user.py:89 user_data {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;} present in table_data [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
+[32mINFO    [0m root:common.py:32 Switching moved to AddUser screen
+[32mINFO    [0m root:add_user.py:38 landed on add user page
+[32mINFO    [0m root:add_user.py:109 verifying that input box should be blank on AddUser page<br/></div></td></tr></tbody>
+      <tbody class="xfailed results-table-row">
+        <tr>
+          <td class="col-result">XFailed</td>
+          <td class="col-name">tests/test_UserProfile.py::TestUserProfile::test_update_user_information</td>
+          <td class="col-duration">3.66</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;test_UserProfile.TestUserProfile object at 0x1176e7090&gt;<br/>driver = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session=&quot;c253de98-d00c-6e4f-9e0d-2b41074d5da2&quot;)&gt;<br/><br/>    @pytest.mark.xfail<br/>    def test_update_user_information(self, driver):<br/>    <br/>        logger.info(&quot;====== Running TEST : test_update_user_information =====&quot;)<br/>    <br/>        login_page = Login(driver)<br/>    <br/>        add_user_page = login_page.login_with_valid_credentials()<br/>    <br/>        view_user_page = add_user_page.create_valid_user(self.user_data_1[&#x27;UserID&#x27;], self.user_data_1[&#x27;Password&#x27;],<br/>                                                         self.user_data_1[&#x27;First Name&#x27;], self.user_data_1[&#x27;Last Name&#x27;])<br/>    <br/>        login_page = view_user_page.sign_out()<br/>    <br/>        user_profile = login_page.login_with_valid_credentials(self.user_data_1[&#x27;UserID&#x27;], self.user_data_1[&#x27;Password&#x27;])<br/>    <br/>        user_profile.verify_userid_enabled()<br/>    <br/>        user_profile.verify_user_profile_is_correct(self.user_data_1[&#x27;UserID&#x27;], self.user_data_1[&#x27;Password&#x27;],<br/>                                                    self.user_data_1[&#x27;First Name&#x27;], self.user_data_1[&#x27;Last Name&#x27;])<br/>    <br/>        user_profile.update_user_details(password=self.user_data_2[&#x27;Password&#x27;], f_name=self.user_data_2[&#x27;First Name&#x27;])<br/>    <br/>        login_page = user_profile.sign_out()<br/>    <br/>        add_user_page = login_page.login_with_valid_credentials()<br/>    <br/>&gt;       add_user_page.goto_viewuser().verify_user_present(self.user_data_2)<br/><br/>tests/test_UserProfile.py:51: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;pages.view_user.ViewUser object at 0x11772ea50&gt;<br/>user_data = {&#x27;First Name&#x27;: &#x27;first004&#x27;, &#x27;Last Name&#x27;: &#x27;last004&#x27;, &#x27;Password&#x27;: &#x27;Update@123&#x27;, &#x27;UserID&#x27;: &#x27;testuser003&#x27;}<br/><br/>    def verify_user_present(self, user_data):<br/>    <br/>        &quot;&quot;&quot;<br/>        :param user_data: data is dictionary which contains the user information<br/>        :return: Boolean : True/False as result Validation<br/>        &quot;&quot;&quot;<br/>        table_data = self.read_user_table_data()<br/>        counter = 0<br/>        for data in table_data:<br/>            if self._compare_dict(data, user_data, [&#x27;Action&#x27;]):<br/>                logging.info(&quot;user_data {} present in table_data {}&quot;.format(user_data, table_data))<br/>                counter += 1<br/>    <br/>        if counter != 1:<br/>            logging.error(&quot;expected user_data {} not present/ present more than once in table {}&quot;.\<br/>                          format(user_data, table_data))<br/>&gt;           assert False<br/><span class="error">E           AssertionError</span><br/><br/>pages/view_user.py:95: AssertionError<br/> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}
 <br/> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m root:conftest.py:32 getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}<br/> ------------------------------Captured stdout call------------------------------ <br/>True
 <br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:====== Running TEST : test_update_user_information =====
 INFO:root:verify the Page Header for correctness of Page landed
@@ -336,7 +426,7 @@ ERROR:root:expected user_data {&#x27;UserID&#x27;: &#x27;testuser003&#x27;, &#x2
 [32mINFO    [0m root:add_user.py:52 entering password  Test@123
 [32mINFO    [0m root:add_user.py:80 entering first name of User :  first003
 [32mINFO    [0m root:add_user.py:86 entering Last name of User :  last003
-[32mINFO    [0m root:add_user.py:116 Creating new user by clicking &#x27;add user&#x27; button
+[32mINFO    [0m root:add_user.py:133 Creating new user by clicking &#x27;add user&#x27; button
 [32mINFO    [0m root:add_user.py:92 clicking add user button
 [32mINFO    [0m root:common.py:38 handle moved to Home Login screen
 [32mINFO    [0m root:login.py:65 verify the Page Header for correctness of Page landed
@@ -370,7 +460,7 @@ ERROR:root:expected user_data {&#x27;UserID&#x27;: &#x27;testuser003&#x27;, &#x2
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_Login.py::TestLogin::test_login_valid_admin_user</td>
-          <td class="col-duration">0.98</td>
+          <td class="col-duration">1.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -393,7 +483,7 @@ INFO:root:landed on add user page
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_Login.py::TestLogin::test_login_invalid_uid</td>
-          <td class="col-duration">0.65</td>
+          <td class="col-duration">0.63</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -416,7 +506,7 @@ INFO:root:error message appeared on screen is : Invalid UserId. Please try again
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_Login.py::TestLogin::test_login_with_rememberme_selected</td>
-          <td class="col-duration">0.90</td>
+          <td class="col-duration">0.88</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -451,7 +541,7 @@ INFO:root:username filled in the input box admin  and username to verify  admin
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_Login.py::TestLogin::test_login_invalid_pwd</td>
-          <td class="col-duration">0.70</td>
+          <td class="col-duration">0.64</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -474,7 +564,7 @@ INFO:root:error message appeared on screen is : Invalid credentials. Please try 
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_UserCRUD.py::TestUserCrud::test_notification_for_password_hint</td>
-          <td class="col-duration">0.74</td>
+          <td class="col-duration">0.94</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -491,14 +581,14 @@ INFO:root:entering user id user1
 INFO:root:entering password  password
 INFO:root:verifying the message for password hint
 INFO:root:Password must conatin at least one lower case alphabet, one upper case alphabet, one number and one special character!
-<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:29 ====== Running TEST : test_notification_for_password_hint =====
+<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:30 ====== Running TEST : test_notification_for_password_hint =====
 [32mINFO    [0m root:login.py:65 verify the Page Header for correctness of Page landed
 [32mINFO    [0m root:login.py:39 enter the user id : admin
 [32mINFO    [0m root:login.py:46 enter the password  : Admin123#
 [32mINFO    [0m root:login.py:59 hitting the login button
 [32mINFO    [0m root:login.py:99 landing to Add User page in case of ADMIN user
 [32mINFO    [0m root:add_user.py:38 landed on add user page
-[32mINFO    [0m root:add_user.py:97 trying to login with Invalid Credentials ...
+[32mINFO    [0m root:add_user.py:114 trying to login with Invalid Credentials ...
 [32mINFO    [0m root:add_user.py:45 entering user id user1
 [32mINFO    [0m root:add_user.py:52 entering password  password
 [32mINFO    [0m root:add_user.py:60 verifying the message for password hint
@@ -506,13 +596,13 @@ INFO:root:Password must conatin at least one lower case alphabet, one upper case
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_UserCRUD.py::TestUserCrud::test_user_created_successfully</td>
-          <td class="col-duration">1.43</td>
+          <td class="col-name">tests/test_UserCRUD.py::TestUserCrud::test_create_user</td>
+          <td class="col-duration">1.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -----------------------------Captured stderr setup------------------------------ <br/>INFO:root:getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}
-<br/> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m root:conftest.py:32 getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}<br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:====== Running TEST : test_user_created_successfully =====
+<br/> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m root:conftest.py:32 getting the config data : {&#x27;web_url&#x27;: &#x27;https://ankitairen.github.io/&#x27;, &#x27;browser&#x27;: &#x27;Firefox&#x27;}<br/> ------------------------------Captured stderr call------------------------------ <br/>INFO:root:====== Running TEST : test_create_user ========
 INFO:root:verify the Page Header for correctness of Page landed
 INFO:root:enter the user id : admin
 INFO:root:enter the password  : Admin123#
@@ -528,7 +618,7 @@ INFO:root:clicking add user button
 INFO:root:Getting the data from User table and storing it
 INFO:root:user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
 INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;} present in table_data [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
-<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:39 ====== Running TEST : test_user_created_successfully =====
+<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:40 ====== Running TEST : test_create_user ========
 [32mINFO    [0m root:login.py:65 verify the Page Header for correctness of Page landed
 [32mINFO    [0m root:login.py:39 enter the user id : admin
 [32mINFO    [0m root:login.py:46 enter the password  : Admin123#
@@ -539,7 +629,7 @@ INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Na
 [32mINFO    [0m root:add_user.py:52 entering password  Test@123
 [32mINFO    [0m root:add_user.py:80 entering first name of User :  first001
 [32mINFO    [0m root:add_user.py:86 entering Last name of User :  last001
-[32mINFO    [0m root:add_user.py:116 Creating new user by clicking &#x27;add user&#x27; button
+[32mINFO    [0m root:add_user.py:133 Creating new user by clicking &#x27;add user&#x27; button
 [32mINFO    [0m root:add_user.py:92 clicking add user button
 [32mINFO    [0m root:view_user.py:42 Getting the data from User table and storing it
 [32mINFO    [0m root:view_user.py:57 user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
@@ -548,7 +638,7 @@ INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Na
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_UserCRUD.py::TestUserCrud::test_multiple_user_created_successfully</td>
-          <td class="col-duration">1.71</td>
+          <td class="col-duration">1.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -580,7 +670,7 @@ INFO:root:clicking add user button
 INFO:root:Getting the data from User table and storing it
 INFO:root:user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser002&#x27;, &#x27;First Name&#x27;: &#x27;first002&#x27;, &#x27;Last Name&#x27;: &#x27;last002&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
 INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser002&#x27;, &#x27;First Name&#x27;: &#x27;first002&#x27;, &#x27;Last Name&#x27;: &#x27;last002&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;} present in table_data [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser002&#x27;, &#x27;First Name&#x27;: &#x27;first002&#x27;, &#x27;Last Name&#x27;: &#x27;last002&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
-<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:51 ====== Running TEST : test_multiple_user_created_successfully =====
+<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:66 ====== Running TEST : test_multiple_user_created_successfully =====
 [32mINFO    [0m root:login.py:65 verify the Page Header for correctness of Page landed
 [32mINFO    [0m root:login.py:39 enter the user id : admin
 [32mINFO    [0m root:login.py:46 enter the password  : Admin123#
@@ -591,7 +681,7 @@ INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser002&#x27;, &#x27;First Na
 [32mINFO    [0m root:add_user.py:52 entering password  Test@123
 [32mINFO    [0m root:add_user.py:80 entering first name of User :  first001
 [32mINFO    [0m root:add_user.py:86 entering Last name of User :  last001
-[32mINFO    [0m root:add_user.py:116 Creating new user by clicking &#x27;add user&#x27; button
+[32mINFO    [0m root:add_user.py:133 Creating new user by clicking &#x27;add user&#x27; button
 [32mINFO    [0m root:add_user.py:92 clicking add user button
 [32mINFO    [0m root:view_user.py:42 Getting the data from User table and storing it
 [32mINFO    [0m root:view_user.py:57 user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
@@ -602,7 +692,7 @@ INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser002&#x27;, &#x27;First Na
 [32mINFO    [0m root:add_user.py:52 entering password  Test@123
 [32mINFO    [0m root:add_user.py:80 entering first name of User :  first002
 [32mINFO    [0m root:add_user.py:86 entering Last name of User :  last002
-[32mINFO    [0m root:add_user.py:116 Creating new user by clicking &#x27;add user&#x27; button
+[32mINFO    [0m root:add_user.py:133 Creating new user by clicking &#x27;add user&#x27; button
 [32mINFO    [0m root:add_user.py:92 clicking add user button
 [32mINFO    [0m root:view_user.py:42 Getting the data from User table and storing it
 [32mINFO    [0m root:view_user.py:57 user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser002&#x27;, &#x27;First Name&#x27;: &#x27;first002&#x27;, &#x27;Last Name&#x27;: &#x27;last002&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
@@ -611,7 +701,7 @@ INFO:root:user_data {&#x27;UserID&#x27;: &#x27;testuser002&#x27;, &#x27;First Na
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_UserCRUD.py::TestUserCrud::test_create_user_with_duplicate_user</td>
-          <td class="col-duration">1.58</td>
+          <td class="col-duration">1.53</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -640,7 +730,7 @@ INFO:root:entering password  Test@123
 INFO:root:clicking add user button
 INFO:root:verifying the error message for duplicate user ID
 INFO:root:This userid already exists. Please enter another userid.
-<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:70 ====== Running TEST : test_create_user_with_duplicate_user =====
+<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:test_UserCRUD.py:85 ====== Running TEST : test_create_user_with_duplicate_user =====
 [32mINFO    [0m root:login.py:65 verify the Page Header for correctness of Page landed
 [32mINFO    [0m root:login.py:39 enter the user id : admin
 [32mINFO    [0m root:login.py:46 enter the password  : Admin123#
@@ -651,14 +741,14 @@ INFO:root:This userid already exists. Please enter another userid.
 [32mINFO    [0m root:add_user.py:52 entering password  Test@123
 [32mINFO    [0m root:add_user.py:80 entering first name of User :  first001
 [32mINFO    [0m root:add_user.py:86 entering Last name of User :  last001
-[32mINFO    [0m root:add_user.py:116 Creating new user by clicking &#x27;add user&#x27; button
+[32mINFO    [0m root:add_user.py:133 Creating new user by clicking &#x27;add user&#x27; button
 [32mINFO    [0m root:add_user.py:92 clicking add user button
 [32mINFO    [0m root:view_user.py:42 Getting the data from User table and storing it
 [32mINFO    [0m root:view_user.py:57 user data found present on user table page: [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
 [32mINFO    [0m root:view_user.py:89 user_data {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;} present in table_data [{&#x27;UserID&#x27;: &#x27;admin&#x27;, &#x27;First Name&#x27;: &#x27;admin&#x27;, &#x27;Last Name&#x27;: &#x27;admin&#x27;, &#x27;Password&#x27;: &#x27;Admin123#&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}, {&#x27;UserID&#x27;: &#x27;testuser001&#x27;, &#x27;First Name&#x27;: &#x27;first001&#x27;, &#x27;Last Name&#x27;: &#x27;last001&#x27;, &#x27;Password&#x27;: &#x27;Test@123&#x27;, &#x27;Action&#x27;: &#x27;&#x27;}]
 [32mINFO    [0m root:common.py:32 Switching moved to AddUser screen
 [32mINFO    [0m root:add_user.py:38 landed on add user page
-[32mINFO    [0m root:add_user.py:123 Creating an invalid user
+[32mINFO    [0m root:add_user.py:140 Creating an invalid user
 [32mINFO    [0m root:add_user.py:45 entering user id testuser001
 [32mINFO    [0m root:add_user.py:52 entering password  Test@123
 [32mINFO    [0m root:add_user.py:92 clicking add user button

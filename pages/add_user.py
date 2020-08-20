@@ -92,6 +92,23 @@ class AddUser(Page):
         logger.info("clicking add user button")
         self.driver.find_element(*self.ADDUSER_BTN).click()
 
+    def _get_field_text(self, locator):
+
+        wait = WebDriverWait(self.driver, 10)
+
+        wait.until(expected_conditions.visibility_of_element_located(locator))
+
+        logger.info("Trying to get text present in locator {}".format(locator))
+        text = self.driver.find_element(*locator).get_property("value")
+        logger.info("Data fetched from locator is {}".format(text))
+
+        return text
+
+    def verify_user_box_should_be_blank(self):
+
+        logger.info("verifying that input box should be blank on AddUser page")
+        assert self._get_field_text(*self.USERID) is None
+
     def insert_invalid_credentials(self, userid, password):
 
         logger.info("trying to login with Invalid Credentials ...")
